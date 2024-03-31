@@ -47,7 +47,7 @@ nav ul li a:hover {
   color: #007F73;
   border-radius: 10px; 
 }
-.nav-drawer {
+.nav_drawer {
   position: fixed;
   top: 0;
   left: -250px;
@@ -55,7 +55,10 @@ nav ul li a:hover {
   height: 100%;
   background-color: #007F73;
   transition: left 0.3s ease;
+  z-index: 1000; 
 }
+
+
 .nav-drawer p {
   color: #FFF455;
   font-size: 20px;
@@ -95,16 +98,17 @@ nav ul li a:hover {
   background-color: #FFF455;
   margin: 3px 0;
   transition: all 0.3s ease;
-}
+} 
+
 .hero {
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-bottom: -25px;
 }
 
 .hero img {
   width: 100%;
-  /* height:93vh; */
   display: block;
 }
 
@@ -123,13 +127,92 @@ nav ul li a:hover {
 
 .text {
   color: #FFF455;
-  font-size: 36px; 
+  font-size: 40px; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
   margin: 20px; 
-  font-family: 'Arial Black', sans-serif; 
+  font-family: sans-serif; 
   text-transform: uppercase; 
 }
 
+
+
+
+.content {
+background-color: #FFF455;
+}
+
+
+.content h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #007F73;
+  padding-top: 30px;
+}
+
+#restaurantsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.restaurant-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #4CCD99; 
+}
+
+.restaurant-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.restaurant-card h2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.restaurant-card p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+
+
+.footer {
+  background-color: #007f73; 
+  color: #FFF455;
+  padding: 10px ; 
+  text-align: center; 
+}
+
+.footer p {
+  margin: 0; 
+  font-size: 14px; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #007F73;
+  color: #FFF455;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -146,3 +229,16 @@ nav ul li a:hover {
     min-width: 1000px;  
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
