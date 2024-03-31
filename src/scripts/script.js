@@ -1,13 +1,11 @@
-// const toggleDrawerButton = document.getElementById('toggleDrawer');
-// const navigationDrawer = document.getElementById('navDrawer');
+document.addEventListener("DOMContentLoaded", function() {
+  const toggleDrawer = document.getElementById("toggleDrawer");
+  const navDrawer = document.getElementById("navDrawer");
 
-// toggleDrawerButton.addEventListener('click', () => {
-//   navigationDrawer.classList.toggle('active');
-//   toggleDrawerButton.querySelectorAll('div').forEach(div => {
-//     div.classList.toggle('open');
-//   });
-// });
-
+  toggleDrawer.addEventListener("click", function() {
+    navDrawer.classList.toggle("active");
+  });
+});
 
 
 document.addEventListener("DOMContentLoaded", function() {

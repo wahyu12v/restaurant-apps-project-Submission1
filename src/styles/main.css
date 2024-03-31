@@ -47,7 +47,7 @@ nav ul li a:hover {
   color: #007F73;
   border-radius: 10px; 
 }
-.nav_drawer {
+.nav-drawer {
   position: fixed;
   top: 0;
   left: -250px;
@@ -125,15 +125,15 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.text {
+.hero h1 {
   color: #FFF455;
   font-size: 40px; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
   margin: 20px; 
   font-family: sans-serif; 
   text-transform: uppercase; 
+  margin-bottom: 10px; 
 }
-
 
 
 
@@ -157,7 +157,7 @@ background-color: #FFF455;
 }
 
 .restaurant-card {
-  border: 1px solid #ddd;
+  border: 1px solid #000000;
   border-radius: 10px;
   padding: 20px;
   background-color: #4CCD99; 
@@ -177,6 +177,51 @@ background-color: #FFF455;
   margin-top: 5px;
   font-size: 16px;
 }
+
+
+
+.artikel-kesehatan {
+  padding: 20px;
+  background-color: #4CCD99;
+}
+
+.artikel-kesehatan h2 {
+  color: #FFC700;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.grid-artikel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.konten-artikel {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.konten-artikel h3 {
+  color: #007F73;
+  text-align: center;
+}
+
+.konten-artikel p {
+  color: #666;
+}
+
+.konten-artikel img {
+  display: block;
+  width: 300px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  margin: 0 auto 10px;
+}
+
+
 
 
 
@@ -214,6 +259,11 @@ background-color: #FFF455;
   top: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .nav-drawer {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 768px) {
   nav ul {
